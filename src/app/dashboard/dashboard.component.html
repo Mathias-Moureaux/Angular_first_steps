@@ -1,0 +1,50 @@
+<div class="dashboard">
+  <h4 class="dashboard-title">Dashboard</h4>
+  <div class="cards">
+    <article class="card">
+      <h2 class="api-status">GEEV API <br>live status</h2>
+    </article>
+    <article class="card">UPTIME : <br><span class="percentage">100%</span></article>
+  </div>
+  <div>
+    <table class="table">
+      <tr>
+        <th>DATE</th>
+        <th>TIME (REL.)</th>
+        <th>RESPONSE TIME</th>
+      </tr>
+      <!-- <tr>
+        <td>{{interval | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr>
+      <tr>
+        <td>{{lastUpdate | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr>
+      <tr>
+        <td>{{lastUpdate | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr>
+      <tr>
+        <td>{{lastUpdate | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr>
+      <tr>
+        <td>{{lastUpdate | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr> -->
+
+
+      <tr *ngFor="let update of data">
+        <td>{{update.id}}</td>
+        <td>{{update.title}}</td>
+        <td>{{update.body}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

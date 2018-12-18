@@ -10,27 +10,26 @@ import { Update } from '../update';
 })
 export class DashboardComponent implements OnInit {
 
-  data: any = [];
+  data: Update[] = [];
 
-  // lastUpdate = new Promise((resolve, reject) => {
-  //   const date = new Date();
-  //   setInterval(
-  //     () => {
-  //       resolve(date);
-  //     }, 1000
-  //   );
-  // });
+  lastUpdate = new Promise((resolve, reject) => {
+    const date = new Date();
+    setInterval(
+      () => {
+        resolve(date);
+      }, 1000
+    );
+  });
 
   constructor(private geevService: GeevService) { }
 
   ngOnInit() {
     this.getGeev();
-    console.log(this.data);
   }
 
   getGeev(): void {
     this.geevService.getGeev()
-      .subscribe(d => this.data = d.slice(0, 5));
+      .subscribe(d => this.data = d);
   }
 
   // ngOnDestroy() {

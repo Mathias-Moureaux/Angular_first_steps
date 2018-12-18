@@ -13,11 +13,6 @@
         <th>TIME (REL.)</th>
         <th>RESPONSE TIME</th>
       </tr>
-      <!-- <tr>
-        <td>{{interval | async | date: 'short'}}</td>
-        <td>{{lastUpdate | async | date: 'ss'}}s</td>
-        <td>{{lastUpdate | async | date: 'ss'}}s</td>
-      </tr>
       <tr>
         <td>{{lastUpdate | async | date: 'short'}}</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
@@ -37,14 +32,18 @@
         <td>{{lastUpdate | async | date: 'short'}}</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
-      </tr> -->
+      </tr>
+      <tr>
+        <td>{{lastUpdate | async | date: 'short'}}</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+        <td>{{lastUpdate | async | date: 'ss'}}s</td>
+      </tr>
 
-
-      <tr *ngFor="let update of data">
+      <!-- <tr *ngFor="let update of data">
         <td>{{update.id}}</td>
         <td>{{update.title}}</td>
         <td>{{update.body}}</td>
-      </tr>
+      </tr> -->
     </table>
   </div>
 </div>

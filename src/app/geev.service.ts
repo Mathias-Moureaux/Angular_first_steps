@@ -11,8 +11,8 @@ export class GeevService {
   constructor(private http: HttpClient) { }
 
   
-  geevUrl = "https://jsonplaceholder.typicode.com/posts"
-  // geevUrl = "https://prod.geev.fr/alive"
+  // geevUrl = "https://jsonplaceholder.typicode.com/posts"
+  geevUrl = "https://prod.geev.fr/alive"
   
 
   getGeev(): Observable<any[]> {

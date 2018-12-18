@@ -20,6 +20,7 @@
   .cards{
     display: flex;
     flex-wrap: wrap;
+    align-self: center;
     
     .card{
       width: 350px;
@@ -32,7 +33,6 @@
       color: white;
       font-size: 1.8rem;
       font-family: $font-title;
-      // box-shadow: 0px 1px 10px #999;
 
       .api-status{
         font-family: $font-title;
@@ -62,15 +62,15 @@
       color: $second-color;
       font-weight: bold;
       
-    th{
-      border: 2px solid white;
-      padding: 15px;
-      background-color: $first-color;
-      color: white;
-      font-family: $font-title;
-      font-size: 1.7rem;
-      font-weight: lighter;
-    }
+      th{
+        border: 2px solid white;
+        padding: 15px;
+        background-color: $first-color;
+        color: white;
+        font-family: $font-title;
+        font-size: 1.7rem;
+        font-weight: lighter;
+      }
 
       td{
         border: 2px dotted white;
@@ -80,10 +80,8 @@
       }
     }
 
-    tr:hover {background-color: #ddd;}
-
-    // tr:nth-child(even){
-    //   background-color: white;
-    // }
+    tr:hover {
+      background-color: #ddd;
+    }
   }
 }

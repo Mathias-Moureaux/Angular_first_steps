@@ -17,8 +17,8 @@
         <td>{{interval | async | date: 'short'}}</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
-      </tr> -->
-      <!-- <tr>
+      </tr>
+      <tr>
         <td>{{lastUpdate | async | date: 'short'}}</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
@@ -39,11 +39,6 @@
         <td>{{lastUpdate | async | date: 'ss'}}s</td>
       </tr> -->
 
-      <!-- <tr *ngFor="let update of interval">
-        <td>{{update.id}}</td>
-        <td>{{update.title}}</td>
-        <td>{{update.body}}</td>
-      </tr> -->
 
       <tr *ngFor="let update of data">
         <td>{{update.id}}</td>

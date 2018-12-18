@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  margin : 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+$first-color: #FE2E50;
+$second-color: #302E3D;
+$third-color: #D5D5D5;
+
+$font-title: 'Staatliches', cursive;
+$font-general: 'Open Sans', sans-serif;

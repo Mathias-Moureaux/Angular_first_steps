@@ -1,0 +1,34 @@
+@import '../../styles.scss';
+
+.sidebar{
+  position: fixed;
+  display: flex;
+  background-color: $third-color;
+  height: 100%;
+  width: 200px;
+  margin-top:70px;
+
+  .tab{
+    margin: 30px 15px;
+    padding-right: 30px;
+    text-decoration: none;
+    height: 25px;
+    
+    .icon-dashboard{
+      width: 25px;
+      height: 25px;
+    }
+  
+    .tab-title{
+      padding-left: 10px;
+      font-size: 1.3rem;
+      font-family: $font-title;
+      color: $first-color;
+    }
+
+    .tab-title:hover{
+      transition: 0.3s;
+      color: $second-color;
+    }
+  }
+}

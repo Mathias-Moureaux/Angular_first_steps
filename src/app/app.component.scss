@@ -1,0 +1,15 @@
+.header{
+  display: flex;
+  height:100%;
+  width: 100%;
+  
+  .navbar{
+    z-index: 10;
+  }
+  
+  .sidebar{
+    z-index: 0;
+  }
+  
+}
+

@@ -1,0 +1,64 @@
+@import '../../styles.scss';
+
+.navbar{
+  position: fixed;
+  background-color: $second-color;
+  display:flex;
+  width: 100%;
+  min-height: 70px;
+  box-shadow: 0px 1px 10px #999;
+
+  .title{
+    font-family: $font-title;
+    color:$first-color;
+    font-size: 2.8rem;
+    margin : 10px;
+    text-decoration: none;
+  }
+  
+  .title:hover{
+    transition : 0.3s;
+    color:white;
+  }
+  
+  .search-field{
+    margin : 12px;
+    width : 70%;
+    border-radius : 25px;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: $font-general;
+  }
+  
+  .search-field:focus{
+    outline: none;
+  }
+  
+  .submit-button{
+    border-radius: 25px;
+    background-color: $first-color;
+    border : none;
+    margin : 12px;
+    width : 10%;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: $font-title;
+  }
+  
+  .submit-button:hover{
+    transition : 0.3s;
+    background-color: white;
+    color: $first-color;
+  
+  }
+  
+  .submit-button:focus{
+    outline: none;
+  }
+}
+
+
+
